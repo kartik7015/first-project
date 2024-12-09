@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartik's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 36px;
+        }
+        nav ul {
+            list-style: none;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover, .active {
+            background-color: #575757;
+            color: #ffcc00;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .intro h2 {
+            font-size: 28px;
+            color: #333;
+        }
+        .intro p {
+            font-size: 18px;
+            color: #555;
+            margin-top: 10px;
+        }
+        .skills, .about, .education {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .skills .skill, .about, .education {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.33% - 30px);
+            margin-bottom: 20px;
+        }
+        .skills .skill h3, .about h3, .education h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .skills .skill ul {
+            list-style: none;
+        }
+        .skills .skill li {
+            font-size: 18px;
+            color: #555;
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kartik's Portfolio</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h2>Hello, I'm Kartik!</h2>
+        <p>I am a Full Stack Developer student at HIIT Skill Center. I cleared my 12th with commerce and achieved excellent results. HIIT Skill Center has been the best place for me to develop my skills and pursue my passion for technology. I am eager to learn more and contribute to the tech community!</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div>
+            <h3>About Me</h3>
+            <p>My name is Kartik, and I am passionate about web development. I am currently studying Full Stack Development at HIIT Skill Center, where I am honing my skills in both frontend and backend technologies. My journey in technology started with an interest in web design, and over time, I developed a fascination with programming and problem-solving.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skill">
+            <h3>Frontend Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Bootstrap</li>
+            </ul>
+        </div>
+        <div class="skill">
+            <h3>Backend Skills</h3>
+            <ul>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+            </ul>
+        </div>
+        <div class="skill">
+            <h3>Tools & Technologies</h3>
+            <ul>
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+                <li>Docker</li>
+                <li>Postman</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div>
+            <h3>Education</h3>
+            <p><strong>HIIT Skill Center</strong> – Full Stack Developer (Ongoing)</p>
+            <p><strong>12th Grade (Commerce)</strong> – Year: 2024 – Good Performance</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Kartik's Portfolio. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
